@@ -1,6 +1,6 @@
 # juancnava.com — Project State
 
-_Last updated: 2026-04-22_
+_Last updated: 2026-04-22 (afternoon)_
 
 ---
 
@@ -142,14 +142,17 @@ _Last updated: 2026-04-22_
 
 | Environment | URL | Status |
 |---|---|---|
-| Preview | https://juancnava-ggthr3rnb-jnavajr93-1787s-projects.vercel.app | ✓ Live |
+| Preview alias | https://juancnava.vercel.app | ✓ Always latest — use this for testing |
+| Latest deploy | https://juancnava-4f01dlzc3-jnavajr93-1787s-projects.vercel.app | ✓ Live |
 | Production | https://juancnava.com | Not yet promoted |
 
 - Project linked to Vercel: `juancnava` (org: `jnavajr93-1787s-projects`)
-- 31 pages built; all routes confirmed READY
+- GitHub repo: https://github.com/jnavajr93/juancnava (push to `main` to deploy)
+- 30 pages built; all routes confirmed READY
 - `.env.local` is covered by `.gitignore` (`.env*` rule on line 34) — safe
 - Stripe test keys are in `.env.local` locally; **add them to Vercel dashboard** (Settings → Environment Variables) before next deploy so they aren't bundled in the upload
 - To promote to production: `vercel --prod` (will ask for confirmation)
+- **Deploy workflow:** `git push origin main` → then `vercel --yes` to push to Vercel (GitHub auto-deploy not yet connected in dashboard)
 
 ---
 
